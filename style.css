@@ -1,1 +1,22 @@
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f3fc;
+    color: #333;
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #6a1b9a;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    transition: color 0.3s;
+  }
+
+  

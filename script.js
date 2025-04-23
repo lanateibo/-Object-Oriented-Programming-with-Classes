@@ -31,8 +31,12 @@ console.log("Total Value:", apple.getTotalValue());
 // part 2 adding inheritance
 
 class PerishableProductProperties extends ProductProperties {
-    constructor(name, price, quantity) {
+    constructor(name, price, quantity, expirationDate) {
       super(name, price, quantity);
+      this.expirationDate = expirationDate;
+    }
+
     }
   
-}
+    
+  

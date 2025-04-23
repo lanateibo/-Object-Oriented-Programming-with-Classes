@@ -72,8 +72,15 @@ class PerishableProductProperties extends ProductProperties {
   ProductProperties.applyDiscount(testProducts, 0.15);
   
   console.log("After 15% Discount:");
-  
+
   testProducts.forEach(p => console.log(p.toString()));
 
     
+    // Part 4: Store Management
+ 
   
+  class Store {
+    constructor() {
+      this.inventory = [];
+    }
+  }

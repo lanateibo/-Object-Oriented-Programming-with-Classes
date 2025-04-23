@@ -97,3 +97,21 @@ class PerishableProductProperties extends ProductProperties {
       }
   
   }
+
+  // Add products to store
+
+  const myStore = new Store();
+
+  const banana = new ProductProperties("Banana", 1.2, 40);
+
+  const bread = new ProductProperties("Bread", 2.0, 25);
+
+  myStore.addProduct(apple);
+
+  myStore.addProduct(banana);
+
+  myStore.addProduct(bread);
+
+  myStore.addProduct(milk);
+
+  myStore.addProduct(yogurt);

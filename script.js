@@ -83,4 +83,9 @@ class PerishableProductProperties extends ProductProperties {
     constructor() {
       this.inventory = [];
     }
+
+    addProduct(product) {
+        this.inventory.push(product);
+      }
+  
   }

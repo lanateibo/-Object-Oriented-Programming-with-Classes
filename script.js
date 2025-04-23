@@ -17,3 +17,11 @@ class ProductProperties {
       }
   
 }
+
+console.log("Part 1: ProductProperties Base Class");
+
+const apple = new ProductProperties("Apple", 2.5, 50);
+
+console.log(apple.toString());
+
+console.log("Total Value:", apple.getTotalValue());

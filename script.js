@@ -49,9 +49,17 @@ class PerishableProductProperties extends ProductProperties {
   const yogurt = new PerishableProductProperties("Yogurt", 0.99, 20, "2025-01-15");
 
   console.log(milk.toString());
-  
+
   console.log(yogurt.toString());
 
  
+  // Part 3: Static Methods and Properties
+  
+  ProductProperties.applyDiscount = function (products, discount) {
+    products.forEach(product => {
+      product.price -= product.price * discount;
+    });
+  };
+
     
   

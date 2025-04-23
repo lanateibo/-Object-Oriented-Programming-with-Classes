@@ -25,3 +25,14 @@ const apple = new ProductProperties("Apple", 2.5, 50);
 console.log(apple.toString());
 
 console.log("Total Value:", apple.getTotalValue());
+
+
+
+// part 2 adding inheritance
+
+class PerishableProductProperties extends ProductProperties {
+    constructor(name, price, quantity) {
+      super(name, price, quantity);
+    }
+  
+}

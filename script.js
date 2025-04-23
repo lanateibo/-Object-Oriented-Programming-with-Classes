@@ -61,5 +61,14 @@ class PerishableProductProperties extends ProductProperties {
     });
   };
 
+  console.log("\nPart 3: Applying 15% Discount");
+
+  const testProducts = [apple, milk, yogurt];
+
+  console.log("Before Discount:");
+
+  testProducts.forEach(p => console.log(p.toString()));
+  
+  
     
   

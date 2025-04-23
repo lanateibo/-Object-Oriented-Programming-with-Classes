@@ -115,3 +115,38 @@ class PerishableProductProperties extends ProductProperties {
   myStore.addProduct(milk);
 
   myStore.addProduct(yogurt);
+
+
+  // Part 5: Testing the System
+  
+  
+  console.log("\nPart 5: Testing the System");
+
+  console.log("Inventory before discount:");
+
+  myStore.inventory.forEach(p => console.log(p.toString()));
+  
+  console.log("Total Inventory Value (Before Discount): $" + myStore.getInventoryValue().toFixed(2));
+
+  
+  
+  ProductProperties.applyDiscount(myStore.inventory, 0.15);
+  
+  console.log("\nInventory after 15% discount:");
+
+  myStore.inventory.forEach(p => console.log(p.toString()));
+  
+  console.log("Total Inventory Value (After Discount): $" + myStore.getInventoryValue().toFixed(2));
+
+  
+  
+  const productToFind = "Milk";
+
+  const foundProduct = myStore.findProductByName(productToFind);
+  
+  console.log("\nSearching for product:", productToFind);
+  if (foundProduct) {
+    console.log("Found Product: " + foundProduct.toString());
+  } else {
+    console.log(`Product "${productToFind}" not found.`);
+  }
